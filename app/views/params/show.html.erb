@@ -21,7 +21,7 @@
 			<th>Key </th>
 			<th>Value </th>
 		</tr>
-		<% for.each(@values) do |val| %>
+		<% @values.each do |val| %>
 		<tr>
 			<td> <%= val.param.name %> </td>
 			<td> <%= val.key %> </td>
