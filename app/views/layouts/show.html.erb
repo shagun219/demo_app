@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Values associated with the Parameter </title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Parameter Name </th>
+			<th>Key </th>
+			<th>Value </th>
+		</tr>
+		<% for.each(@values) do |val| %>
+		<tr>
+			<td> <%= val.param.name %> </td>
+			<td> <%= val.key %> </td>
+			<td> <%= val.value %> </td>
+		</tr>
+		<% end %>
+	</table>
+</body>
+</html>
