@@ -10,7 +10,7 @@ class ParamsController < ApplicationController
   # GET /params/1
   # GET /params/1.json
   def show
-    @param = Param.find([:id])
+    @param = Param.find(params[:id])
     @values = param.values
   end
 
